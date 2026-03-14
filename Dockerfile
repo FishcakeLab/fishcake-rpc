@@ -12,7 +12,7 @@ RUN apk add --no-cache \
     ca-certificates \
     tzdata
     
-RUN opm get ledgetech/lua-resty-http
+RUN apk add --no-cache perl && opm get ledgetech/lua-resty-http
 
 # Set timezone
 ENV TZ=UTC
