@@ -12,7 +12,7 @@ RUN apk add --no-cache \
     ca-certificates \
     tzdata
     
-RUN /usr/local/openresty/luajit/bin/luarocks install lua-resty-http
+RUN opm get ledgetech/lua-resty-http
 
 # Set timezone
 ENV TZ=UTC
